@@ -111,12 +111,13 @@ def importar_chave():
 
 # Configuração da janela principal
 janela = Tk()
-janela.title("Criptografia de Arquivos - AES-256")
+janela.title("Criptografia de Arquivos")
+janela.geometry ("600x372") 
 
 # Aplicando tema escuro
 janela.configure(bg="#2E2E2E")
-Label(janela, text="Chave (hex):", bg="#2E2E2E", fg="white").pack(pady=5)
-campo_chave = Entry(janela, width=64)
+Label(janela, text="Chave (hex):", bg="#2E2E2E", fg="white").pack(pady=10)
+campo_chave = Entry(width=64)
 campo_chave.pack(pady=5)
 
 # Botões para criptografar e descriptografar
