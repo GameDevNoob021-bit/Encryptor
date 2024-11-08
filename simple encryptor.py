@@ -5,6 +5,8 @@ from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import padding
 
+# Gerar a chave vem junto com a criptografia entao guarde a chave para nao haver perdeas.
+
 # Função para gerar uma chave de 256 bits
 def gerar_chave():
     return os.urandom(32)  # 32 bytes = 256 bits
